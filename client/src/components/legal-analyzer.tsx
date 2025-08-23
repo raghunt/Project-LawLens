@@ -71,7 +71,7 @@ export function LegalAnalyzer() {
           <CardContent className="p-8">
             <div className="border-t border-gray-200 pt-8">
               <h3 className="text-2xl font-bold text-trust-blue mb-6" data-testid="text-analysis-title">
-                Legal Impact Analysis
+                Law Lens Analysis
               </h3>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
@@ -166,7 +166,7 @@ export function LegalAnalyzer() {
           <CardContent className="text-center py-12">
             <LoadingSpinner size="lg" className="mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-trust-blue mb-2" data-testid="text-analyzing">
-              Analyzing Legal Impact...
+              Focusing Your Legal View...
             </h3>
             <p className="text-gray-600" data-testid="text-processing">
               Processing your situation against current and proposed laws
@@ -183,10 +183,10 @@ export function LegalAnalyzer() {
         <CardContent className="p-8">
           <div className="mb-8">
             <h2 className="text-3xl font-bold text-trust-blue mb-4" data-testid="text-analyzer-title">
-              Legal Impact Analyzer
+              Law Lens
             </h2>
             <p className="text-gray-600 text-lg" data-testid="text-analyzer-description">
-              Describe your situation and get personalized analysis of how current and proposed laws might affect you.
+              Describe your situation and focus your view on how current and proposed laws might affect you.
             </p>
           </div>
 
@@ -306,7 +306,7 @@ export function LegalAnalyzer() {
                 data-testid="button-analyze"
               >
                 <Search className="mr-2 h-4 w-4" />
-                Analyze Legal Impact
+                Focus Legal View
               </Button>
             </form>
           </Form>

@@ -1,8 +1,8 @@
-# Legal Impact Analyzer
+# Law Lens
 
 ## Overview
 
-The Legal Impact Analyzer is a full-stack web application that provides AI-powered legal analysis for users in the United States and India. The application allows users to describe their legal situations and receive comprehensive analysis including favorable impacts, potential concerns, detailed explanations, and recommended actions. It also includes a searchable database of current and proposed laws from both countries.
+Law Lens is a full-stack web application that provides AI-powered legal analysis for users in the United States and India. The application allows users to describe their legal situations and receive comprehensive analysis including favorable impacts, potential concerns, detailed explanations, and recommended actions. It also includes a searchable database of current and proposed laws from both countries.
 
 ## User Preferences
 

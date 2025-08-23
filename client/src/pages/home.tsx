@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { 
-  Scale, 
+  FileSearch, 
   Shield, 
   Bot, 
   RefreshCw, 
@@ -37,9 +37,9 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <Scale className="text-trust-blue text-2xl mr-3" />
+                <FileSearch className="text-trust-blue text-2xl mr-3" />
                 <span className="text-xl font-bold text-trust-blue" data-testid="text-app-title">
-                  Legal Impact Analyzer
+                  Law Lens
                 </span>
               </div>
             </div>
@@ -88,10 +88,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6" data-testid="text-hero-title">
-              Understand How Laws Affect Your Life
+              See Through Laws to Understand Your Impact
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto" data-testid="text-hero-description">
-              Get personalized analysis of current and proposed laws from the USA and India using AI-powered legal research.
+              Focus your view on how current and proposed laws from the USA and India affect your personal situation with AI-powered analysis.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button 
@@ -100,7 +100,7 @@ export default function Home() {
                 data-testid="button-hero-analyze"
               >
                 <Search className="mr-2 h-5 w-5" />
-                Analyze Legal Impact
+                Focus Your Analysis
               </Button>
               <Button 
                 onClick={scrollToLaws}
@@ -229,11 +229,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center mb-4">
-                <Scale className="text-trust-blue text-2xl mr-3" />
-                <span className="text-xl font-bold" data-testid="text-footer-title">Legal Impact Analyzer</span>
+                <FileSearch className="text-trust-blue text-2xl mr-3" />
+                <span className="text-xl font-bold" data-testid="text-footer-title">Law Lens</span>
               </div>
               <p className="text-gray-400 mb-4" data-testid="text-footer-description">
-                Open-source legal analysis tool helping individuals understand how laws affect their personal situations.
+                Open-source legal lens helping individuals focus on how laws affect their personal situations.
               </p>
               <Alert className="bg-red-900/20 border-red-500/30">
                 <AlertTriangle className="h-4 w-4 text-red-400" />
@@ -266,7 +266,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p data-testid="text-copyright">&copy; 2024 Legal Impact Analyzer. Open source project under MIT License.</p>
+            <p data-testid="text-copyright">&copy; 2024 Law Lens. Open source project under MIT License.</p>
           </div>
         </div>
       </footer>
