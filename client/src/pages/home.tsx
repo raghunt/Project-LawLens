@@ -266,7 +266,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p data-testid="text-copyright">&copy; 2024 Law Lens. Open source project under MIT License.</p>
+            <p data-testid="text-copyright">&copy; 2024 Law Lens. Open source project under Apache 2.0 License.</p>
           </div>
         </div>
       </footer>
