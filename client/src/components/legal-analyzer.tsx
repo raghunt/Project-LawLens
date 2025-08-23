@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CircleAlert, TriangleAlert, AlertTriangle, CheckCircle, Minus, Plus, ArrowRight, RefreshCw, Search } from "lucide-react";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { insertLegalAnalysisSchema, type LegalAnalysis } from "@shared/schema";
@@ -62,7 +63,7 @@ export function LegalAnalyzer() {
   };
 
   if (analysisResult) {
-    const analysis = analysisResult.analysis;
+    const analysis = analysisResult.analysis as import('@shared/schema').LegalAnalysisResult;
     if (!analysis) return null;
 
     return (
@@ -273,9 +274,9 @@ export function LegalAnalyzer() {
                 )}
               />
 
-              <CircleAlert className="border-warning-amber/20 bg-warning-amber/10">
+              <Alert className="border-warning-amber/20 bg-warning-amber/10">
                 <AlertTriangle className="h-4 w-4 text-warning-amber" />
-                <TriangleAlert>
+                <AlertDescription>
                   <div>
                     <h4 className="font-semibold text-warning-amber mb-1">
                       Educational Purposes Only
@@ -285,18 +286,18 @@ export function LegalAnalyzer() {
                       Always consult with qualified legal professionals for specific legal matters.
                     </p>
                   </div>
-                </TriangleAlert>
-              </CircleAlert>
+                </AlertDescription>
+              </Alert>
 
               {analysisMutation.error && (
-                <CircleAlert variant="destructive">
+                <Alert className="border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive">
                   <AlertTriangle className="h-4 w-4" />
-                  <TriangleAlert data-testid="text-error-message">
+                  <AlertDescription data-testid="text-error-message">
                     {analysisMutation.error instanceof Error 
                       ? analysisMutation.error.message 
                       : "Failed to analyze legal impact. Please try again."}
-                  </TriangleAlert>
-                </CircleAlert>
+                  </AlertDescription>
+                </Alert>
               )}
 
               <Button 
